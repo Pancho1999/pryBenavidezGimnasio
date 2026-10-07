@@ -5,25 +5,31 @@ namespace pryBenavidezGimnasio
         public frmInscripcion()
         {
             InitializeComponent();
-            EstadoInicial();
         }
         private void EstadoInicial()
         {
             txtNombre.Text = string.Empty;
             txtEdad.Text = string.Empty;
             chkEstudiante.Checked = false;
-            cboPlan.SelectedIndex = -1;
-            cboTurno.SelectedIndex = -1;
-            txtMeses.Text = string.Empty;
+            cboPlan.SelectedIndex = 0;
+            cboTurno.SelectedIndex = 0;
+            txtMeses.Text = "1";
             chkCasillero.Checked = false;
-            rbtEfectivo.Checked = false;
-            rbtTarjeta.Checked = false;
+            rbtEfectivo.Checked = true;
             cboCuotas.SelectedIndex = -1;
+            cboCuotas.Enabled = false;
+            btnCalcular.Enabled = false;
+            txtNombre.Focus();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            EstadoInicial(); 
+            EstadoInicial();
+        }
+
+        private void frmInscripcion_Load(object sender, EventArgs e)
+        {
+            EstadoInicial();
         }
     }
 }

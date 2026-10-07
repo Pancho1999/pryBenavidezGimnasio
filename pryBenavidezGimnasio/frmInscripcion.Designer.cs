@@ -161,10 +161,10 @@
             btnLimpiar.Location = new Point(194, 338);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(75, 23);
-            btnLimpiar.TabIndex = 11;
+            btnLimpiar.TabIndex = 10;
             btnLimpiar.Text = "&Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
-            btnLimpiar.Click += this.btnLimpiar_Click;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // boxPago
             // 
@@ -268,6 +268,7 @@
             Name = "frmInscripcion";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gimnasio Siglo — Inscripción";
+            Load += frmInscripcion_Load;
             boxPago.ResumeLayout(false);
             boxPago.PerformLayout();
             ResumeLayout(false);
