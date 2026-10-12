@@ -53,11 +53,13 @@
             // 
             // txtNombre
             // 
+            txtNombre.CharacterCasing = CharacterCasing.Upper;
             txtNombre.Location = new Point(87, 28);
             txtNombre.MaxLength = 30;
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 0;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // txtEdad
             // 
@@ -66,6 +68,8 @@
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(100, 23);
             txtEdad.TabIndex = 1;
+            txtEdad.TextChanged += txtNombre_TextChanged;
+            txtEdad.KeyPress += txtEdad_KeyPress;
             // 
             // chkEstudiante
             // 
@@ -104,6 +108,8 @@
             txtMeses.Name = "txtMeses";
             txtMeses.Size = new Size(100, 23);
             txtMeses.TabIndex = 5;
+            txtMeses.TextChanged += txtNombre_TextChanged;
+            txtMeses.KeyPress += txtEdad_KeyPress;
             // 
             // chkCasillero
             // 
@@ -136,6 +142,7 @@
             rbtTarjeta.TabStop = true;
             rbtTarjeta.Text = "Tarjeta";
             rbtTarjeta.UseVisualStyleBackColor = true;
+            rbtTarjeta.CheckedChanged += rbtTarjeta_CheckedChanged;
             // 
             // cboCuotas
             // 
@@ -155,6 +162,7 @@
             btnCalcular.TabIndex = 9;
             btnCalcular.Text = "&Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnLimpiar
             // 
