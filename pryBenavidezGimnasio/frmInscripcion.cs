@@ -231,11 +231,11 @@ namespace pryBenavidezGimnasio
             SOCIO datosSocio = new SOCIO();
             datosSocio.nombre = txtNombre.Text;
             datosSocio.edad = edadIngresada;
-            datosSocio.categoria = categoriaSocio;   // "Menor" o "Mayor" (del operador ternario)
+            datosSocio.categoria = categoriaSocio;
             datosSocio.plan = cboPlan.Text;
-            datosSocio.horario = horarioTurno;        // Obtenido del switch por índice
+            datosSocio.horario = horarioTurno;
             datosSocio.meses = cantidadMeses;
-            datosSocio.formaDePago = textoPago;      // "Efectivo" o "Tarjeta en N cuotas"
+            datosSocio.formaDePago = textoPago;
             datosSocio.total = total;
             datosSocio.valorCuota = valorCuota;
 
@@ -253,6 +253,7 @@ namespace pryBenavidezGimnasio
                 "Resumen de Inscripción del Socio",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+
             EstadoInicial();
         }
     }
