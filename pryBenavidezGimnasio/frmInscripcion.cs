@@ -1,3 +1,5 @@
+using System.Net.Security;
+
 namespace pryBenavidezGimnasio
 {
     public partial class frmInscripcion : Form
@@ -30,6 +32,7 @@ namespace pryBenavidezGimnasio
             txtEdad.Clear();
             chkEstudiante.Checked = false;
             cboPlan.SelectedIndex = 0;
+            chkPaselibre.Checked = false;
             cboTurno.SelectedIndex = 0;
             txtMeses.Text = "1";
             chkCasillero.Checked = false;
@@ -140,6 +143,8 @@ namespace pryBenavidezGimnasio
 
                     return;
             }
+
+            if (chkPaselibre.Checked) precioMensual = 30000.00m;
 
             int indiceTurno = cboTurno.SelectedIndex;
             string horarioTurno = "";

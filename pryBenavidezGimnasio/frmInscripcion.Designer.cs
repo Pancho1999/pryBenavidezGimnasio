@@ -48,6 +48,7 @@
             lblMeses = new Label();
             lblCuotas = new Label();
             lblPago = new Label();
+            chkPaselibre = new CheckBox();
             boxPago.SuspendLayout();
             SuspendLayout();
             // 
@@ -247,12 +248,23 @@
             lblPago.TabIndex = 19;
             lblPago.Text = "Pago:";
             // 
+            // chkPaselibre
+            // 
+            chkPaselibre.AutoSize = true;
+            chkPaselibre.Location = new Point(214, 116);
+            chkPaselibre.Name = "chkPaselibre";
+            chkPaselibre.Size = new Size(76, 19);
+            chkPaselibre.TabIndex = 20;
+            chkPaselibre.Text = "Pase libre";
+            chkPaselibre.UseVisualStyleBackColor = true;
+            // 
             // frmInscripcion
             // 
             AcceptButton = btnCalcular;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(329, 394);
+            Controls.Add(chkPaselibre);
             Controls.Add(lblPago);
             Controls.Add(lblCuotas);
             Controls.Add(lblMeses);
@@ -305,5 +317,6 @@
         private Label lblMeses;
         private Label lblCuotas;
         private Label lblPago;
+        private CheckBox chkPaselibre;
     }
 }
