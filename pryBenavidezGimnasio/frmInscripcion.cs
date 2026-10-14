@@ -26,8 +26,8 @@ namespace pryBenavidezGimnasio
         }
         private void EstadoInicial()
         {
-            txtNombre.Text = string.Empty;
-            txtEdad.Text = string.Empty;
+            txtNombre.Clear();
+            txtEdad.Clear();
             chkEstudiante.Checked = false;
             cboPlan.SelectedIndex = 0;
             cboTurno.SelectedIndex = 0;
